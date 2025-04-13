@@ -1,6 +1,5 @@
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain.agents import tool
-import re
 
 
 # Define custom tools for credit card and investment banking advice
@@ -19,14 +18,3 @@ def investment_banking_advice(query: str) -> str:
     search_results = search.run(f"investment banking {query}")
     advice = f"Here's some investment banking advice based on your query:\n{search_results}"
     return advice
-
-@tool
-def financial_calculator(expression: str) -> str:
-    """Useful for performing mathematical calculations related to finance."""
-    try:
-        if re.search(r"[a-zA-Z]", expression):
-            return "Invalid expression. Please only use numbers and operators."
-        result = eval(expression)
-        return str(result)
-    except Exception as e:
-        return f"Error: {e}"
