@@ -1,0 +1,44 @@
+{
+  "RewardsPlus": {
+    "description": "Earn points on all purchases, ideal for everyday spending.",
+    "moreinfo": "Earn points on all purchases, ideal for everyday spending.",
+    "rewards_structure": "1.5x points on all purchases",
+    "annual_fee": 0,
+    "benefits": [
+      "Purchase protection",
+      "Extended warranty"
+    ],
+    "ideal_for": [
+      "Everyday spending",
+      "Simple rewards"
+    ]
+  },
+  "TravelElite": {
+    "description": "Premium travel card with excellent travel rewards and benefits.",
+    "moreinfo": "Premium travel card with excellent travel rewards and benefits.",
+    "rewards_structure": "2x miles on travel and dining, 1x on everything else",
+    "annual_fee": 99,
+    "benefits": [
+      "Airport lounge access",
+      "Travel insurance",
+      "No foreign transaction fees"
+    ],
+    "ideal_for": [
+      "Frequent travelers",
+      "Dining enthusiasts"
+    ]
+  },
+  "CashBackSaver": {
+    "description": "Earn cash back on every purchase.",
+    "rewards_structure": "2% cash back on two categories of your choice, 1% on everything else",
+    "annual_fee": 0,
+    "benefits": [
+      "Cash back rewards",
+      "Balance transfer options"
+    ],
+    "ideal_for": [
+      "Cash back focused users",
+      "Managing expenses"
+    ]
+  }
+}
