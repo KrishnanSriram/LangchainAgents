@@ -46,8 +46,8 @@ def main():
   agent = create_react_agent(llm=ollama_model, tools=tools, prompt=prompt)
   # Create an agent executor
   agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)  
-  # response = agent_executor.invoke({"input":"What are the best credit cards for travel rewards?"})
-  # print(response)
+  response = agent_executor.invoke({"input":"What are the best credit cards for travel rewards?"})
+  print(response)
 
   response = agent_executor.invoke({"input":"Explain the concept of discounted cash flow in investment banking."})
   print(response)
