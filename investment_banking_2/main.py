@@ -29,10 +29,6 @@ def build_notification_executor(llm, react_prompt):
   return notify_executor
 
 def investment_workflow(llm, prompt):
-  # multiplier_executor = build_multiplier_agent(llm, prompt)
-  # response = multiplier_executor.invoke({"input": "What is the result of multiplying 6 and 7?"})
-  # print(response['output'])
-
   print("\n=== STEP 1: Market Research ===")
   market_executor = build_market_executor(llm, prompt)
   research_output = market_executor.invoke({"input": "Which shares should I buy today?"})
