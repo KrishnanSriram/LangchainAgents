@@ -57,7 +57,7 @@ def main(model_name: str = "gemma3:12b"):
   nlp_agent = create_react_agent(llm=llm, tools=nlp_tools, prompt=create_prompt_template())
   nlp_executor = AgentExecutor(agent=nlp_agent, tools=nlp_tools, verbose=True, handle_parsing_errors=True)
   response = nlp_executor.invoke({"input":"list all scrips in watchlist. Can you?"})
-  print(response)
+  print(response["output"])
 
 if __name__ == "__main__":
   load_dotenv()
